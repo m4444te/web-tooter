@@ -1,0 +1,126 @@
+/* General body styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for the form */
+}
+
+/* Header styles */
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels for the fields */
+label {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Textarea styling */
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition for focus */
+    background-color: #f9f9f9;
+    /* Light background */
+}
+
+/* Focus effect for textareas */
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    /* Enhanced shadow */
+    background-color: #fff;
+    /* White background on focus */
+}
+
+/* Placeholder styling */
+textarea::placeholder {
+    color: #aaa;
+    /* Light grey color */
+    font-style: italic;
+    /* Italicize placeholder text */
+}
+
+/* File upload input */
+input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+}
+
+/* Button styles */
+button {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    /* Button shadow */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design: ensure the form looks good on mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

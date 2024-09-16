@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fediverse Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Share to the Fediverse</h1>
+        </header>
+        <main>
+            <form id="statusForm">
+                <label for="contentWarning">Content Warning (optional):</label>
+                <input type="text" id="contentWarning" placeholder="Enter content warning..." maxlength="500"></input>
+
+                <label for="statusMessage">Message:</label>
+                <textarea id="statusMessage" placeholder="What's on your mind?" required></textarea>
+
+                <label for="imageUpload">Upload Images (up to 4):</label>
+                <input type="file" id="imageUpload" accept="image/*" multiple>
+
+                <button type="submit">Post Status</button>
+            </form>
+        </main>
+    </div>
+
+    <script defer src="app.js"></script>
+</body>
+</html>
